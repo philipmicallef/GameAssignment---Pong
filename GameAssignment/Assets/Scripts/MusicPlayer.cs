@@ -2,42 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicPlayer : MonoBehaviour {
+public class MusicPlayer : MonoBehaviour
+{
 
-	//static   variables   are   shared   across   all   instances   of   a   class
-	static   MusicPlayer   myMusicPlayer   =   null;
+    static MusicPlayer myMusicPlayer = null;
 
+    void Awake() //the first method that is run in Unity
+    {
+        //if myMusicPlayer is the 1st instance
+        if (myMusicPlayer == null)
+        {
+            //myMusciPlayer = 1st SOund Object
+            myMusicPlayer = this;
 
-	void Awake()
-	{
-		//if   myMusicPlayer   already   exists
-		if (myMusicPlayer != null) {
-			//Destroy   the   new   object   immediately
-			Destroy (this.gameObject);
-			print ("Duplicate   music   player   self-destructing");
-		}
+            print("Sound object " + this.gameObject.GetInstanceID().ToString());
+            print("First Sound Object");
 
-		//else if   myMusicPlayer   is   null
-		else {
+            //this.gameObject = the gameObject attached to this 
+            //script, in our case SoundObject
+            //DontDestroyOnLoad = do not destroy the gameObject
+            //when changing scenes
+            GameObject.DontDestroyOnLoad(this.gameObject);
+        }
 
-			//myMusicPlayer   is   this   object   and   it   is   no   longer   null                                   
-			myMusicPlayer = this;
+        //if myMusicPlayer != null
+        //if SoundObeject already exists
+        else
+        {
+            print("Sound object " + this.gameObject.GetInstanceID().ToString());
 
-			//gameObject = musicPlayerObject with all its components the gameObject that this script is attached to music   keeps   on   playing   while   browsing   the   scenes
-			GameObject.DontDestroyOnLoad (gameObject);
+            //Destroy the 2nd gameObject created
+            Destroy(this.gameObject);
+        }
+    }
 
-		}
-	}
+    // Use this for initialization
+    void Start()
+    {
 
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 }

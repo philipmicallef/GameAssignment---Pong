@@ -16,19 +16,14 @@ public class PaddlePlayer2 : MonoBehaviour {
 		print (Input.mousePosition);
 
 
-
-
-
-
-
-
-
-		float mousePosInBlocks =(Input.mousePosition.y / Screen.height * 5) -4f;
+        float mousePosInBlocks = (Input.mousePosition.y / Screen.height * 5) -2.5f;
 
 		Vector3   paddlePosition   =   new   Vector3(this.transform.position.x,   0.5f,   0f); 
-		this.transform.position   =   paddlePosition;
+		
 
-		paddlePosition.x   =   mousePosInBlocks;
+		paddlePosition.y   =   mousePosInBlocks;
+
+        this.transform.position = paddlePosition;
 
 	}
 }

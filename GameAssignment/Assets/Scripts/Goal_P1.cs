@@ -5,20 +5,22 @@ using UnityEngine;
 public class Goal_P1 : MonoBehaviour {
 
 
-	public   LevelManager   levelManager;
-		void   OnTriggerEnter2D(Collider2D   collider) {
-			print("Trigger");
+	private   LevelManager   levelManager;
 
-			//loads Next Scene when ball enteres Trigger
-			levelManager.LoadLevel("Level_2");     
-			
+    int p1_score = 0;
+
+		void   OnTriggerEnter2D(Collider2D   collider) 
+        {
+            print("Collision with " + collision.gameObject.name);
 		}
 
 
 		//this   is   triggered   when   a   collision happens
 		void   OnCollisionEnter2D(Collision2D   collision)   
 		{
-			print("Collision");             
+			print("Score !!");
+            p1_score++;
+            
 		}
 
 		// Use this for initialization
@@ -28,6 +30,9 @@ public class Goal_P1 : MonoBehaviour {
 		
 		// Update is called once per frame
 		void Update () {
-		
+
+        if(p1_score = 3){
+            myLevelManager.LoadLevel("Level_2");
+        }
 	}
 }
