@@ -13,7 +13,6 @@ public class PaddlePlayer2 : MonoBehaviour {
 	void Update () {
 
 		//this   should   print   in   the   console   the   position   of   the   cursor
-		print (Input.mousePosition);
 
 
         float mousePosInBlocks = (Input.mousePosition.y / Screen.height * 5) -2.5f;

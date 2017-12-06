@@ -11,7 +11,7 @@ public class Goal_P1 : MonoBehaviour {
 
 		void   OnTriggerEnter2D(Collider2D   collider) 
         {
-            print("Collision with " + collision.gameObject.name);
+            print("Collision with " + gameObject.name);
 		}
 
 
@@ -31,8 +31,8 @@ public class Goal_P1 : MonoBehaviour {
 		// Update is called once per frame
 		void Update () {
 
-        if(p1_score = 3){
-            myLevelManager.LoadLevel("Level_2");
-        }
-	}
+	        if(p1_score == 3){
+	            levelManager.LoadLevel("Level_2");
+	        }
+		}
 }
