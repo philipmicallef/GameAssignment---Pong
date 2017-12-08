@@ -23,4 +23,9 @@ public class LevelManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void QuitGame()
+	{
+		UnityEditor.EditorApplication.isPlaying = false;
+	}
 }

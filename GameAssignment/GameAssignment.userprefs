@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ball.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PaddlePlayer1.cs">
     <Files>
-      <File FileName="Assets/Scripts/Ball.cs" Line="25" Column="32" />
-      <File FileName="Assets/Scripts/PaddlePlayer2.cs" Line="18" Column="80" />
-      <File FileName="Assets/Scripts/PaddlePlayer1.cs" Line="22" Column="18" />
-      <File FileName="Assets/Scripts/Goal_P1.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/Goal_P2.cs" Line="38" Column="3" />
+      <File FileName="Assets/Scripts/Goal_P1.cs" Line="45" Column="4" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="25" Column="32" NotebookId="1" />
+      <File FileName="Assets/Scripts/PaddlePlayer2.cs" Line="18" Column="80" NotebookId="1" />
+      <File FileName="Assets/Scripts/PaddlePlayer1.cs" Line="22" Column="18" NotebookId="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="6" Column="44" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

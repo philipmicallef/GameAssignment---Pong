@@ -8,10 +8,10 @@ public class Goal_P2 : MonoBehaviour {
 
 
 	private   LevelManager   levelManager;
+	private Goal_P1 p1_gamesWon;
 
 
 	private int p2_score = 0;
-
 	public Text p2_score_text;
 
 
@@ -30,14 +30,17 @@ public class Goal_P2 : MonoBehaviour {
 
 		if (SceneManager.GetActiveScene ().name == "Level_1" && p2_score == 3) {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+
 		}
 
 		if (SceneManager.GetActiveScene ().name == "Level_2" && p2_score == 3) {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		
 		}
 
 		if (SceneManager.GetActiveScene ().name == "Level_3" && p2_score == 3) {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		
 		}
 
 	}
