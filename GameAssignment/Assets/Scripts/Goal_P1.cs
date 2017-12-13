@@ -15,7 +15,7 @@ public class Goal_P1 : MonoBehaviour {
 	public Text p1_score_text;
 
 	private int p1_gamesWon = 0;
-
+    private int p2_gamesWon = 0;
 	public Text winner_Text;
 
 
@@ -36,16 +36,19 @@ public class Goal_P1 : MonoBehaviour {
 			if (SceneManager.GetActiveScene ().name == "Level_1" && p1_score == 3) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 				p1_gamesWon = p1_gamesWon + 1;
+                p2_gamesWon = p2_gamesWon;
 			}
 
 			if (SceneManager.GetActiveScene ().name == "Level_2" && p1_score == 3) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 				p1_gamesWon = p1_gamesWon + 1;
+                p2_gamesWon = p2_gamesWon;
 			}
 
 			if (SceneManager.GetActiveScene ().name == "Level_3" && p1_score == 3) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 				p1_gamesWon = p1_gamesWon + 1;
+                p2_gamesWon = p2_gamesWon;
 			}
 			
 		}
@@ -66,9 +69,10 @@ public class Goal_P1 : MonoBehaviour {
 			if (SceneManager.GetActiveScene ().name == "End" && p1_gamesWon >= 2) {
 				winner_Text.text = ("Player 1");
 			} 
+            if (SceneManager.GetActiveScene().name == "End" && p1_gamesWon <= 1)
+            {
+                winner_Text.text = ("Player 2");
+            }
 
-			if(SceneManager.GetActiveScene ().name == "End" && p1_gamesWon <= 1){
-				winner_Text.text = ("Player 2");
-			}
 		}
 }
