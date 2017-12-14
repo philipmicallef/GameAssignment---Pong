@@ -26,6 +26,11 @@ public class Ball : MonoBehaviour
 			Vector2 tweak = new Vector2(randomX, randomY);
 			this.GetComponent<Rigidbody2D>().velocity += tweak;
 		}
+		if (collision.gameObject.name == "P1_Score") {
+			Goal_P1.p1_score++;
+			hasStarted = false;
+		}
+
 		else
 		{
 

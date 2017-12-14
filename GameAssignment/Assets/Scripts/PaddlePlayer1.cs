@@ -11,6 +11,10 @@ public class PaddlePlayer1 : MonoBehaviour {
 
 	private Ball ball;
 
+	float maxY = 4f;
+
+	float minY = -8f;
+
 	// Use this for initialization
 	void Start () {
 
@@ -20,6 +24,17 @@ public class PaddlePlayer1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
+		if (transform.position.y >= 4f) {
+			this.transform.position = new Vector3 (this.transform.position.x, maxY, 0);
+		 
+		}
+
+		if (transform.position.y <= 4f) {
+			this.transform.position = new Vector3 (this.transform.position.x, minY, 0);
+		
+		}
+		*/
 
 		if (Input.GetKey(KeyCode.UpArrow)) {
 			transform.Translate (Vector3.up * Time.deltaTime * 6f, 0);
