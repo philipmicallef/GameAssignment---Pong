@@ -14,7 +14,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 1280
-    y: -85
+    y: -86
     width: 1920
     height: 991
   m_ShowMode: 4
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 442}
   m_MaxSize: {x: 22008, y: 10000}
   vertical: 0
-  controlID: 1445
+  controlID: 206
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 1446
+  controlID: 165
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1280
-    y: 446
+    y: 445
     width: 837
     height: 438
   m_MaximizeOnPlay: 1
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1280
-    y: -36
+    y: -37
     width: 837
     height: 461
   m_SceneLighting: 1
@@ -435,14 +435,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2121
-    y: -36
+    y: -37
     width: 281
     height: 920
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 32d6ffffc6f4ffffc8f4ffff9cfbffff00000000
+    m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2406
-    y: -36
+    y: -37
     width: 399
     height: 920
   m_SearchFilter:
@@ -503,18 +503,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/philipmicallef/Desktop/Pc Games_Assignment/GameAssignment---Pong-master/GameAssignment
+  m_LastProjectPath: /Users/philipmicallef/Documents/Mcast 2017-2018/GameAssignment/GameAssignment/Pong
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be270000
-    m_LastClickedID: 10174
+    m_SelectedIDs: 1a270000
+    m_LastClickedID: 10010
     m_ExpandedIDs: 000000001a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2809
-    y: -36
+    y: -37
     width: 391
     height: 920
   m_ScrollPosition: {x: 0, y: 0}
